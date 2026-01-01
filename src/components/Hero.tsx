@@ -10,7 +10,7 @@ const Hero = () => {
   }
 
   return (
-    <section id="home" className="relative min-h-screen flex items-center pt-40 overflow-hidden">
+    <section id="home" className="relative min-h-screen flex items-center pt-32 sm:pt-40 overflow-hidden">
       {/* Background with Ambient Overlay */}
       <div className="absolute inset-0 z-0">
         <motion.div
@@ -44,7 +44,7 @@ const Hero = () => {
               </span>
             </div>
 
-            <h1 className="text-5xl md:text-8xl font-serif text-white leading-[1.1] tracking-tight">
+            <h1 className="text-4xl sm:text-6xl md:text-8xl font-serif text-white leading-[1.1] tracking-tight">
               {t('hero.title')} <br />
               <span className="text-accent italic font-light drop-shadow-sm">
                 {t('hero.titleAccent')}
@@ -71,7 +71,7 @@ const Hero = () => {
             </div>
 
             {/* Trust Badges */}
-            <div className="grid grid-cols-2 md:grid-cols-3 gap-6 md:gap-12 pt-12 border-t border-white/10 mt-16 max-w-3xl">
+            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-12 pt-12 border-t border-white/10 mt-16 max-w-3xl">
               {[
                 {
                   icon: () => (

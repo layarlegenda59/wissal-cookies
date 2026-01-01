@@ -137,7 +137,7 @@ const WhyChoose = () => {
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           transition={{ duration: 1.2, ease: "easeOut" }}
-          className="mt-32 relative rounded-[4rem] overflow-hidden group min-h-[500px] flex items-center shadow-[0_50px_100px_-20px_rgba(0,0,0,0.3)] bg-primary"
+          className="mt-20 sm:mt-32 relative rounded-[2rem] sm:rounded-[4rem] overflow-hidden group min-h-[400px] sm:min-h-[500px] flex items-center shadow-[0_50px_100px_-20px_rgba(0,0,0,0.3)] bg-primary"
         >
           <div className="absolute inset-0 z-0">
             <img
@@ -154,7 +154,7 @@ const WhyChoose = () => {
             <div className="absolute -bottom-1/2 -right-1/4 w-[100%] h-[100%] bg-primary/20 blur-[120px] rounded-full mix-blend-soft-light" style={{ animation: 'pulse 4s infinite 2s' }}></div>
           </div>
 
-          <div className="relative z-20 w-full px-12 py-20 md:px-24 text-left">
+          <div className="relative z-20 w-full px-8 py-16 sm:px-12 md:px-24 text-left">
             <div className="max-w-2xl">
               <motion.div
                 initial={{ opacity: 0, x: -20 }}
@@ -167,7 +167,7 @@ const WhyChoose = () => {
                   <span className="text-accent font-bold tracking-[0.4em] uppercase text-[10px]">{t('whyChoose.banner.subtitle')}</span>
                 </div>
 
-                <h3 className="text-4xl md:text-6xl font-serif text-white leading-[1.1]">
+                <h3 className="text-3xl sm:text-4xl md:text-6xl font-serif text-white leading-[1.1]">
                   {t('whyChoose.banner.title')} <br />
                   <span className="italic font-light text-accent">{t('whyChoose.banner.titleAccent')}</span>
                 </h3>

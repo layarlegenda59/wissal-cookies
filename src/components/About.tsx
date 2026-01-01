@@ -71,7 +71,7 @@ const About = () => {
               <img
                 src="https://images.unsplash.com/photo-1558961363-fa8fdf82db35?auto=format&fit=crop&q=80&w=1000"
                 alt="Our Heritage"
-                className="w-full h-[600px] object-cover"
+                className="w-full h-[350px] sm:h-[500px] lg:h-[600px] object-cover"
               />
               <div className="absolute inset-0 bg-gradient-to-t from-primary/40 to-transparent" />
             </div>
@@ -81,7 +81,7 @@ const About = () => {
               initial={{ scale: 0, rotate: -20 }}
               whileInView={{ scale: 1, rotate: 0 }}
               transition={{ delay: 0.5, type: 'spring' }}
-              className="absolute -bottom-6 -right-6 bg-white px-10 py-6 rounded-[2.2rem] shadow-[0_20px_50px_-15px_rgba(0,0,0,0.1)] border border-accent/5 max-w-[210px] text-center z-20"
+              className="absolute -bottom-4 -right-4 sm:-bottom-6 sm:-right-6 bg-white px-6 py-4 sm:px-10 sm:py-6 rounded-2xl sm:rounded-[2.2rem] shadow-[0_20px_50px_-15px_rgba(0,0,0,0.1)] border border-accent/5 max-w-[160px] sm:max-w-[210px] text-center z-20"
             >
               <div className="space-y-4">
                 <div className="flex items-center justify-center gap-1">
@@ -143,7 +143,7 @@ const About = () => {
             </motion.div>
 
             {/* Values Grid */}
-            <div className="grid sm:grid-cols-2 gap-8 pt-10 border-t border-border/60">
+            <div className="grid grid-cols-1 sm:grid-cols-2 gap-6 sm:gap-8 pt-10 border-t border-border/60">
               {values.map((value, index) => (
                 <motion.div
                   key={index}

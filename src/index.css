@@ -90,19 +90,19 @@
 
 @layer components {
   .section-padding {
-    @apply py-20 md:py-28 lg:py-36;
+    @apply py-16 sm:py-24 md:py-28 lg:py-36;
   }
 
   .container-custom {
-    @apply container mx-auto px-6 sm:px-8 lg:px-12 max-w-7xl;
+    @apply container mx-auto px-4 sm:px-8 lg:px-12 max-w-7xl;
   }
 
   .heading-1 {
-    @apply text-5xl md:text-7xl lg:text-8xl font-bold tracking-tight text-balance italic font-serif;
+    @apply text-4xl sm:text-6xl md:text-7xl lg:text-8xl font-bold tracking-tight text-balance italic font-serif;
   }
 
   .heading-2 {
-    @apply text-4xl md:text-5xl lg:text-6xl font-bold tracking-tight text-balance;
+    @apply text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold tracking-tight text-balance leading-tight;
   }
 
   .heading-3 {
@@ -142,7 +142,7 @@
 
   /* Standardized Stat Components */
   .stat-value {
-    @apply text-3xl md:text-5xl font-serif italic text-primary tracking-tighter;
+    @apply text-3xl sm:text-4xl md:text-5xl font-serif italic text-primary tracking-tighter;
   }
 
   .stat-label {

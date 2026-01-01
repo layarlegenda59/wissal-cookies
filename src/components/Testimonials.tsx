@@ -64,9 +64,9 @@ const Testimonials = () => {
               transition={{ delay: index * 0.1, duration: 0.8 }}
               className="relative group h-full"
             >
-              <div className="card-luxury p-10 h-full flex flex-col items-center text-center">
-                <div className="mb-8 text-accent/20 group-hover:text-accent/40 transition-colors duration-500">
-                  <Quote className="w-12 h-12" />
+              <div className="card-luxury p-6 sm:p-10 h-full flex flex-col items-center text-center">
+                <div className="mb-6 sm:mb-8 text-accent/20 group-hover:text-accent/40 transition-colors duration-500">
+                  <Quote className="w-8 h-8 sm:w-12 h-12" />
                 </div>
 
                 <div className="flex gap-1 mb-6">
@@ -102,14 +102,14 @@ const Testimonials = () => {
           transition={{ delay: 0.5, duration: 1 }}
           className="mt-24 flex flex-col items-center gap-8"
         >
-          <div className="flex -space-x-4">
+          <div className="flex -space-x-3 sm:-space-x-4">
             {[
               'https://images.unsplash.com/photo-1544005313-94ddf0286df2?auto=format&fit=crop&q=80&w=100',
               'https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&q=80&w=100',
               'https://images.unsplash.com/photo-1494790108377-be9c29b29330?auto=format&fit=crop&q=80&w=100',
               'https://images.unsplash.com/photo-1500648767791-00dcc994a43e?auto=format&fit=crop&q=80&w=100'
             ].map((url, i) => (
-              <div key={i} className="w-14 h-14 rounded-full border-4 border-white overflow-hidden shadow-xl hover:translate-y-[-4px] transition-transform duration-300">
+              <div key={i} className="w-10 h-10 sm:w-14 sm:h-14 rounded-full border-2 sm:border-4 border-white overflow-hidden shadow-xl hover:translate-y-[-4px] transition-transform duration-300">
                 <img src={url} alt="Satisfied Client" className="w-full h-full object-cover" />
               </div>
             ))}

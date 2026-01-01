@@ -25,7 +25,7 @@ const WhatsAppOrder = () => {
           initial={{ opacity: 0, y: 40 }}
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 1 }}
-          className="max-w-6xl mx-auto bg-white rounded-[3rem] overflow-hidden shadow-[0_50px_100px_-20px_rgba(0,0,0,0.15)] grid lg:grid-cols-2"
+          className="max-w-6xl mx-auto bg-white rounded-2xl sm:rounded-[3rem] overflow-hidden shadow-[0_50px_100px_-20px_rgba(0,0,0,0.15)] grid lg:grid-cols-2"
         >
           {/* Left Side Visual */}
           <div className="relative min-h-[400px] lg:min-h-[700px] bg-primary overflow-hidden group">
@@ -35,11 +35,11 @@ const WhatsAppOrder = () => {
               className="absolute inset-0 w-full h-full object-cover transition-transform duration-1000 group-hover:scale-110"
             />
             <div className="absolute inset-0 bg-gradient-to-t from-primary via-primary/30 to-transparent z-10" />
-            <div className="absolute bottom-12 left-12 right-12 z-20">
-              <div className="w-12 h-px bg-accent mb-6"></div>
-              <h2 className="text-white font-serif italic text-5xl md:text-7xl tracking-tight leading-none">
+            <div className="absolute bottom-8 left-8 right-8 sm:bottom-12 sm:left-12 sm:right-12 z-20">
+              <div className="w-12 h-px bg-accent mb-4 sm:mb-6"></div>
+              <h2 className="text-white font-serif italic text-4xl sm:text-5xl md:text-7xl tracking-tight leading-none">
                 {t('order.title')} <br />
-                <span className="text-accent not-italic font-sans text-xs uppercase tracking-[0.5em] font-bold mt-4 block">
+                <span className="text-accent not-italic font-sans text-[10px] sm:text-xs uppercase tracking-[0.5em] font-bold mt-3 sm:mt-4 block">
                   {t('order.titleAccent')}
                 </span>
               </h2>
@@ -47,15 +47,15 @@ const WhatsAppOrder = () => {
           </div>
 
           {/* Right Side Form */}
-          <div className="p-12 md:p-20 space-y-12 bg-white">
+          <div className="p-6 sm:p-12 md:p-20 space-y-8 sm:space-y-12 bg-white">
             <div className="space-y-4">
-              <h3 className="text-3xl font-serif text-primary italic tracking-tight">Inquiry Form</h3>
-              <p className="text-muted-foreground text-xs font-light">
+              <h3 className="text-2xl sm:text-3xl font-serif text-primary italic tracking-tight">Inquiry Form</h3>
+              <p className="text-muted-foreground text-[10px] sm:text-xs font-light">
                 Fields marked with <span className="text-accent">*</span> are essential for your boutique experience.
               </p>
             </div>
 
-            <form onSubmit={handleSubmit} className="space-y-10">
+            <form onSubmit={handleSubmit} className="space-y-6 sm:space-y-10">
               {/* Name Field */}
               <div className="group space-y-4">
                 <div className="flex items-center gap-3">

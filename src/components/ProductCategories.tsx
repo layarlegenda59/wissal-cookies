@@ -93,11 +93,11 @@ const ProductCategories = () => {
                   </div>
                 </div>
 
-                <div className="p-8 space-y-3 flex-grow flex flex-col">
-                  <h3 className="text-2xl font-serif italic text-primary group-hover:text-accent transition-colors">
+                <div className="p-6 sm:p-8 space-y-3 flex-grow flex flex-col">
+                  <h3 className="text-xl sm:text-2xl font-serif italic text-primary group-hover:text-accent transition-colors">
                     {category.name}
                   </h3>
-                  <p className="text-sm text-muted-foreground leading-relaxed flex-grow">
+                  <p className="text-[13px] sm:text-sm text-muted-foreground leading-relaxed flex-grow">
                     {category.description}
                   </p>
                   <button
