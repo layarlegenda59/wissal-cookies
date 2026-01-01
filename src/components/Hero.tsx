@@ -44,14 +44,14 @@ const Hero = () => {
               </span>
             </div>
 
-            <h1 className="text-4xl sm:text-6xl md:text-8xl font-serif text-white leading-[1.1] tracking-tight">
+            <h1 className="text-4xl sm:text-6xl md:text-8xl font-serif text-white leading-[1.1] tracking-tight text-center sm:text-left">
               {t('hero.title')} <br />
               <span className="text-accent italic font-light drop-shadow-sm">
                 {t('hero.titleAccent')}
               </span>
             </h1>
 
-            <p className="text-lg md:text-xl text-white/70 max-w-2xl leading-relaxed font-light">
+            <p className="text-lg md:text-xl text-white/70 max-w-2xl leading-relaxed font-light text-center sm:text-left mx-auto sm:mx-0">
               {t('hero.description')}
             </p>
 
@@ -102,11 +102,11 @@ const Hero = () => {
                   label: t('hero.trustBadges.exclusive')
                 }
               ].map((badge, i) => (
-                <div key={i} className="flex items-center gap-4">
+                <div key={i} className="flex flex-col sm:flex-row items-center gap-4 text-center sm:text-left">
                   <div className="w-11 h-11 rounded-full bg-white/5 border border-white/10 flex items-center justify-center text-accent shrink-0 backdrop-blur-sm">
                     <badge.icon />
                   </div>
-                  <span className="text-white text-[9px] uppercase tracking-[0.3em] font-bold leading-tight drop-shadow-md">{badge.label}</span>
+                  <span className="text-white text-[9px] uppercase tracking-[0.3em] font-bold leading-tight drop-shadow-md max-w-[120px] sm:max-w-none">{badge.label}</span>
                 </div>
               ))}
             </div>

@@ -48,7 +48,7 @@ const WhatsAppOrder = () => {
 
           {/* Right Side Form */}
           <div className="p-6 sm:p-12 md:p-20 space-y-8 sm:space-y-12 bg-white">
-            <div className="space-y-4">
+            <div className="space-y-4 text-center lg:text-left">
               <h3 className="text-2xl sm:text-3xl font-serif text-primary italic tracking-tight">Inquiry Form</h3>
               <p className="text-muted-foreground text-[10px] sm:text-xs font-light">
                 Fields marked with <span className="text-accent">*</span> are essential for your boutique experience.

@@ -26,17 +26,17 @@ const Footer = () => {
               <div className="w-16 h-16 md:w-20 md:h-20 overflow-hidden rounded-full ring-4 ring-white/10 shadow-2xl">
                 <img src="/logo.jpg" alt="Logo" className="w-full h-full object-cover" />
               </div>
-              <div className="flex flex-col">
+              <div className="flex flex-col items-center lg:items-start text-center lg:text-left">
                 <h3 className="text-2xl md:text-3xl font-serif font-bold tracking-tighter">
                   WISSAL<span className="italic font-light text-accent">COOKIES</span>
                 </h3>
                 <span className="text-[10px] uppercase tracking-[0.4em] font-bold text-accent">Atelier Boutique</span>
               </div>
             </div>
-            <p className="text-white/60 body-large max-w-sm">
+            <p className="text-white/60 body-large max-w-sm mx-auto lg:mx-0 text-center lg:text-left">
               {t('footer.description')}
             </p>
-            <div className="flex gap-4 pt-4">
+            <div className="flex justify-center lg:justify-start gap-4 pt-4">
               {[
                 { icon: Instagram, href: 'https://instagram.com/wissalcookies' },
                 { icon: Mail, href: 'mailto:wissalcookies@gmail.com' },
@@ -56,13 +56,13 @@ const Footer = () => {
           </div>
 
           {/* Quick Links */}
-          <div className="lg:col-span-3 space-y-8">
+          <div className="lg:col-span-3 space-y-8 text-center lg:text-left">
             <h4 className="text-xs uppercase tracking-[0.3em] font-bold text-accent">{t('footer.navTitle')}</h4>
             <ul className="space-y-4">
               {navLinks.map((link, i) => (
                 <li key={i}>
-                  <a href={link.href} className="group flex items-center gap-2 text-white/70 hover:text-white transition-colors duration-300">
-                    <span className="w-0 group-hover:w-4 h-px bg-accent transition-all duration-300"></span>
+                  <a href={link.href} className="group flex items-center justify-center lg:justify-start gap-2 text-white/70 hover:text-white transition-colors duration-300">
+                    <span className="hidden lg:block w-0 group-hover:w-4 h-px bg-accent transition-all duration-300"></span>
                     {link.name}
                   </a>
                 </li>
@@ -71,24 +71,24 @@ const Footer = () => {
           </div>
 
           {/* Contact & Location */}
-          <div className="lg:col-span-4 space-y-8">
+          <div className="lg:col-span-4 space-y-8 text-center lg:text-left">
             <h4 className="text-xs uppercase tracking-[0.3em] font-bold text-accent">{t('footer.contactTitle')}</h4>
             <div className="space-y-6">
-              <div className="flex gap-4 items-start pt-2">
-                <Phone className="w-5 h-5 text-accent flex-shrink-0" />
+              <div className="flex flex-col lg:flex-row gap-4 items-center justify-center lg:justify-start pt-2">
+                <MapPin className="w-5 h-5 text-accent flex-shrink-0" />
                 <p className="text-white/70 text-sm leading-relaxed">
                   {t('footer.address')}<br />
                   {t('footer.addressDetails')}
                 </p>
               </div>
-              <div className="flex gap-4 items-center">
+              <div className="flex flex-col lg:flex-row gap-4 items-center justify-center lg:justify-start">
                 <Phone className="w-5 h-5 text-accent flex-shrink-0" />
                 <p className="text-white/70 text-sm italic">+62 831-9823-0073</p>
               </div>
             </div>
 
             {/* Premium Newsletter Section */}
-            <div className="pt-8 space-y-6">
+            <div className="pt-8 space-y-6 text-center lg:text-left">
               <div className="space-y-2">
                 <span className="text-[10px] uppercase tracking-[0.3em] font-bold text-white/40 block">Stay Updated</span>
                 <p className="text-sm text-white/60 font-medium">{t('footer.newsletter')}</p>

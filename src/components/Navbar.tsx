@@ -119,24 +119,24 @@ const Navbar = () => {
             animate={{ opacity: 1, x: 0 }}
             exit={{ opacity: 1, x: '100%' }}
             transition={{ type: 'spring', damping: 25, stiffness: 200 }}
-            className="fixed inset-0 z-[60] bg-white flex flex-col p-8"
+            className="fixed inset-0 z-[60] bg-white flex flex-col p-6"
           >
-            <div className="flex items-center justify-between mb-20">
-              <div className="flex items-center gap-3">
-                <div className="w-12 h-12 overflow-hidden rounded-full ring-2 ring-secondary shadow-md">
+            <div className="flex items-center justify-between mb-12">
+              <div className="flex items-center gap-2">
+                <div className="w-10 h-10 overflow-hidden rounded-full ring-2 ring-secondary shadow-md">
                   <img src="/logo.jpg" alt="Logo" className="w-full h-full object-cover" />
                 </div>
-                <span className="font-serif font-bold text-xl text-primary">WISSAL<span className="italic font-light text-accent">COOKIES</span></span>
+                <span className="font-serif font-bold text-lg text-primary">WISSAL<span className="italic font-light text-accent">COOKIES</span></span>
               </div>
               <button
                 onClick={() => setIsMobileMenuOpen(false)}
                 className="p-2 text-primary hover:text-accent transition-colors"
               >
-                <X className="w-8 h-8" />
+                <X className="w-7 h-7" />
               </button>
             </div>
 
-            <div className="flex flex-col gap-8">
+            <div className="flex flex-col gap-5">
               {navLinks.map((link, i) => (
                 <motion.a
                   initial={{ opacity: 0, y: 20 }}
@@ -145,7 +145,7 @@ const Navbar = () => {
                   key={link.name}
                   href={link.href}
                   onClick={() => setIsMobileMenuOpen(false)}
-                  className="text-3xl font-serif italic text-primary hover:text-accent transition-colors"
+                  className="text-xl font-serif italic text-primary hover:text-accent transition-colors"
                 >
                   {link.name}
                 </motion.a>

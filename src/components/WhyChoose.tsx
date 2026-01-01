@@ -154,15 +154,15 @@ const WhyChoose = () => {
             <div className="absolute -bottom-1/2 -right-1/4 w-[100%] h-[100%] bg-primary/20 blur-[120px] rounded-full mix-blend-soft-light" style={{ animation: 'pulse 4s infinite 2s' }}></div>
           </div>
 
-          <div className="relative z-20 w-full px-8 py-16 sm:px-12 md:px-24 text-left">
-            <div className="max-w-2xl">
+          <div className="relative z-20 w-full px-8 py-16 sm:px-12 md:px-24 text-center lg:text-left">
+            <div className="max-w-2xl mx-auto lg:mx-0">
               <motion.div
                 initial={{ opacity: 0, x: -20 }}
                 whileInView={{ opacity: 1, x: 0 }}
                 transition={{ delay: 0.3, duration: 0.8 }}
                 className="space-y-6"
               >
-                <div className="flex items-center gap-4">
+                <div className="flex items-center justify-center lg:justify-start gap-4">
                   <div className="h-px w-12 bg-accent/50"></div>
                   <span className="text-accent font-bold tracking-[0.4em] uppercase text-[10px]">{t('whyChoose.banner.subtitle')}</span>
                 </div>
@@ -172,11 +172,11 @@ const WhyChoose = () => {
                   <span className="italic font-light text-accent">{t('whyChoose.banner.titleAccent')}</span>
                 </h3>
 
-                <p className="text-white/70 text-lg leading-relaxed max-w-lg font-light">
+                <p className="text-white/70 text-base sm:text-lg leading-relaxed max-w-lg font-light mx-auto lg:mx-0">
                   {t('whyChoose.banner.desc')}
                 </p>
 
-                <div className="pt-8 flex flex-wrap items-center gap-8">
+                <div className="pt-8 flex flex-col sm:flex-row items-center justify-center lg:justify-start gap-8">
                   <button className="btn-premium px-10 py-5 group-hover:shadow-accent/20">
                     <span className="relative z-10 flex items-center gap-2">
                       {t('whyChoose.banner.cta')}

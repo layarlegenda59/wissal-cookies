@@ -81,9 +81,9 @@ const About = () => {
               initial={{ scale: 0, rotate: -20 }}
               whileInView={{ scale: 1, rotate: 0 }}
               transition={{ delay: 0.5, type: 'spring' }}
-              className="absolute -bottom-4 -right-4 sm:-bottom-6 sm:-right-6 bg-white px-6 py-4 sm:px-10 sm:py-6 rounded-2xl sm:rounded-[2.2rem] shadow-[0_20px_50px_-15px_rgba(0,0,0,0.1)] border border-accent/5 max-w-[160px] sm:max-w-[210px] text-center z-20"
+              className="absolute -bottom-4 -right-4 sm:-bottom-6 sm:-right-6 bg-white px-5 py-3 sm:px-10 sm:py-6 rounded-2xl sm:rounded-[2.2rem] shadow-[0_20px_50px_-15px_rgba(0,0,0,0.1)] border border-accent/5 max-w-[140px] sm:max-w-[210px] text-center z-20"
             >
-              <div className="space-y-4">
+              <div className="space-y-3 sm:space-y-4">
                 <div className="flex items-center justify-center gap-1">
                   {[1, 2, 3, 4, 5].map((i) => (
                     <motion.div
@@ -92,16 +92,16 @@ const About = () => {
                       whileInView={{ opacity: 1, scale: 1 }}
                       transition={{ delay: 0.6 + (i * 0.1) }}
                     >
-                      <Star className="w-3 h-3 text-accent fill-accent" />
+                      <Star className="w-2.5 h-2.5 sm:w-3 h-3 text-accent fill-accent" />
                     </motion.div>
                   ))}
                 </div>
 
-                <div className="space-y-2">
-                  <div className="inline-block bg-[#FAF6F0] text-accent font-bold tracking-[0.4em] uppercase text-[7px] px-3 py-1 rounded-full border border-accent/5 whitespace-nowrap">
+                <div className="space-y-1 sm:space-y-2">
+                  <div className="inline-block bg-[#FAF6F0] text-accent font-bold tracking-[0.4em] uppercase text-[6px] sm:text-[7px] px-2 py-0.5 sm:px-3 sm:py-1 rounded-full border border-accent/5 whitespace-nowrap">
                     {t('about.legacy.est')}
                   </div>
-                  <h4 className="text-primary font-serif italic text-xl leading-tight">
+                  <h4 className="text-primary font-serif italic text-base sm:text-xl leading-tight">
                     {t('about.legacy.title')}
                   </h4>
                 </div>
@@ -111,7 +111,7 @@ const About = () => {
 
           {/* Text Side */}
           <div className="space-y-10">
-            <div className="space-y-4">
+            <div className="space-y-4 text-center lg:text-left">
               <motion.p
                 initial={{ opacity: 0 }}
                 whileInView={{ opacity: 1 }}
@@ -136,7 +136,7 @@ const About = () => {
               initial={{ opacity: 0 }}
               whileInView={{ opacity: 1 }}
               transition={{ delay: 0.3 }}
-              className="space-y-6 text-muted-foreground leading-relaxed text-lg font-light"
+              className="space-y-6 text-muted-foreground leading-relaxed text-[15px] sm:text-lg font-light text-center lg:text-left"
             >
               <p> {t('about.p1')} </p>
               <p> {t('about.p2')} </p>
