@@ -143,7 +143,7 @@ const About = () => {
             </motion.div>
 
             {/* Values Grid */}
-            <div className="grid grid-cols-1 sm:grid-cols-2 gap-6 sm:gap-8 pt-10 border-t border-border/60">
+            <div className="grid grid-cols-2 gap-4 sm:gap-8 pt-10 border-t border-border/60">
               {values.map((value, index) => (
                 <motion.div
                   key={index}
@@ -152,17 +152,17 @@ const About = () => {
                   transition={{ delay: index * 0.1 }}
                   className="group"
                 >
-                  <div className="flex items-start gap-4">
+                  <div className="flex flex-col sm:flex-row items-center sm:items-start gap-3 sm:gap-4 text-center sm:text-left">
                     <div className="icon-atelier-container shrink-0 group-hover:scale-105 transition-transform duration-500">
-                      <div className="icon-atelier-base w-12 h-12 rounded-2xl bg-white group-hover:bg-primary border border-secondary shadow-sm transition-all duration-500">
-                        <div className="text-primary group-hover:text-white transition-colors duration-500 scale-75">
+                      <div className="icon-atelier-base w-10 h-10 sm:w-12 sm:h-12 rounded-xl sm:rounded-2xl bg-white group-hover:bg-primary border border-secondary shadow-sm transition-all duration-500">
+                        <div className="text-primary group-hover:text-white transition-colors duration-500 scale-[0.6] sm:scale-75">
                           <value.icon />
                         </div>
                       </div>
                     </div>
                     <div>
-                      <h4 className="font-bold text-primary text-[13px] tracking-tight mb-1 group-hover:text-accent transition-colors duration-300">{value.title}</h4>
-                      <p className="text-[11px] text-muted-foreground leading-relaxed font-light">{value.description}</p>
+                      <h4 className="font-bold text-primary text-[11px] sm:text-[13px] tracking-tight mb-1 group-hover:text-accent transition-colors duration-300">{value.title}</h4>
+                      <p className="hidden sm:block text-[11px] text-muted-foreground leading-relaxed font-light">{value.description}</p>
                     </div>
                   </div>
                 </motion.div>

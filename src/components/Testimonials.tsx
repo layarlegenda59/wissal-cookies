@@ -54,15 +54,15 @@ const Testimonials = () => {
           </motion.h2>
         </div>
 
-        {/* Testimonials Grid */}
-        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+        {/* Testimonials Grid - Horizontal Scroll on Mobile */}
+        <div className="flex overflow-x-auto lg:grid lg:grid-cols-3 gap-6 lg:gap-8 pb-8 lg:pb-0 snap-x snap-mandatory no-scrollbar -mx-4 px-4 lg:mx-0 lg:px-0">
           {testimonials.map((testimonial, index) => (
             <motion.div
               key={index}
               initial={{ opacity: 0, y: 40 }}
               whileInView={{ opacity: 1, y: 0 }}
               transition={{ delay: index * 0.1, duration: 0.8 }}
-              className="relative group h-full"
+              className="relative group h-full min-w-[300px] lg:min-w-0 snap-center"
             >
               <div className="card-luxury p-6 sm:p-10 h-full flex flex-col items-center text-center">
                 <div className="mb-6 sm:mb-8 text-accent/20 group-hover:text-accent/40 transition-colors duration-500">

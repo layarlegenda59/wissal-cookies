@@ -66,15 +66,15 @@ const ProductCategories = () => {
           </motion.div>
         </div>
 
-        {/* Categories Grid */}
-        <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+        {/* Categories Grid - Horizontal Scroll on Mobile */}
+        <div className="flex overflow-x-auto lg:grid lg:grid-cols-4 gap-6 lg:gap-8 pb-8 lg:pb-0 snap-x snap-mandatory no-scrollbar -mx-4 px-4 lg:mx-0 lg:px-0">
           {categories.map((category, index) => (
             <motion.div
               key={index}
               initial={{ opacity: 0, y: 30 }}
               whileInView={{ opacity: 1, y: 0 }}
               transition={{ delay: index * 0.1, duration: 0.6 }}
-              className="group"
+              className="group min-w-[280px] lg:min-w-0 snap-center"
             >
               <div className="card-luxury h-full flex flex-col">
                 <div className="relative aspect-[3/4] overflow-hidden">

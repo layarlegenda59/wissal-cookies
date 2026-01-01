@@ -69,15 +69,15 @@ const FeaturedProducts = () => {
           </motion.div>
         </div>
 
-        {/* Products Grid */}
-        <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-8">
+        {/* Products Grid - Horizontal Scroll on Mobile, Grid on Desktop */}
+        <div className="flex overflow-x-auto md:grid md:grid-cols-2 lg:grid-cols-4 gap-6 md:gap-8 pb-8 md:pb-0 snap-x snap-mandatory no-scrollbar -mx-4 px-4 md:mx-0 md:px-0">
           {featured.map((product, index) => (
             <motion.div
               key={index}
               initial={{ opacity: 0, y: 30 }}
               whileInView={{ opacity: 1, y: 0 }}
               transition={{ delay: index * 0.1, duration: 0.8 }}
-              className="group"
+              className="group min-w-[280px] sm:min-w-0 snap-center"
             >
               <div className="relative aspect-[4/5] overflow-hidden rounded-2xl mb-6 shadow-xl group-hover:shadow-2xl transition-all duration-700">
                 <img
