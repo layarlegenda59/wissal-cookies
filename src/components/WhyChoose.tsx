@@ -107,7 +107,7 @@ const WhyChoose = () => {
               initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
               transition={{ delay: index * 0.1, duration: 0.6 }}
-              className="group space-y-6"
+              className="group space-y-6 flex flex-col items-center text-center md:items-start md:text-left"
             >
               <div className="icon-atelier-container w-fit">
                 <div className="icon-atelier-glow"></div>
