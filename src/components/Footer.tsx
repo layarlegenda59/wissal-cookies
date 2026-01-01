@@ -113,7 +113,7 @@ const Footer = () => {
 
         {/* Legal & Credits */}
         <div className="mt-12 pt-8 border-t border-white/10 flex flex-col md:flex-row justify-between items-center gap-6">
-          <p className="text-[10px] uppercase tracking-[0.2em] text-white/40">
+          <p className="text-[10px] uppercase tracking-[0.2em] text-white/40 text-center md:text-left">
             &copy; {currentYear} WISSAL COOKIES ATELIER. {t('footer.rights')}.
           </p>
           <div className="flex gap-4">
