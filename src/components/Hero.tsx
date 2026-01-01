@@ -65,13 +65,13 @@ const Hero = () => {
                 </span>
               </button>
               <button className="text-white font-medium hover:text-accent transition-colors flex items-center gap-2 group tracking-widest text-xs uppercase">
-                <span className="w-8 h-px bg-accent/50 group-hover:w-12 transition-all" />
+                <span className="hidden sm:block w-8 h-px bg-accent/50 group-hover:w-12 transition-all" />
                 {t('hero.ctaSecondary')}
               </button>
             </div>
 
             {/* Trust Badges */}
-            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-12 pt-12 border-t border-white/10 mt-16 max-w-3xl">
+            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-12 pt-6 sm:pt-12 border-t border-white/10 mt-6 sm:mt-16 max-w-3xl px-6 sm:px-0 mx-auto sm:mx-0">
               {[
                 {
                   icon: () => (
@@ -102,11 +102,11 @@ const Hero = () => {
                   label: t('hero.trustBadges.exclusive')
                 }
               ].map((badge, i) => (
-                <div key={i} className="flex flex-col sm:flex-row items-center gap-4 text-center sm:text-left">
-                  <div className="w-11 h-11 rounded-full bg-white/5 border border-white/10 flex items-center justify-center text-accent shrink-0 backdrop-blur-sm">
+                <div key={i} className="flex items-center gap-3 sm:gap-4 text-left">
+                  <div className="w-9 h-9 sm:w-11 sm:h-11 rounded-full bg-white/5 border border-white/10 flex items-center justify-center text-accent shrink-0 backdrop-blur-sm">
                     <badge.icon />
                   </div>
-                  <span className="text-white text-[9px] uppercase tracking-[0.3em] font-bold leading-tight drop-shadow-md max-w-[120px] sm:max-w-none">{badge.label}</span>
+                  <span className="text-white text-[8px] sm:text-[9px] uppercase tracking-[0.3em] font-bold leading-tight drop-shadow-md">{badge.label}</span>
                 </div>
               ))}
             </div>
