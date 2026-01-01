@@ -18,10 +18,10 @@ const Footer = () => {
       {/* Decorative background element */}
       <div className="absolute top-0 right-0 w-96 h-96 bg-accent/5 rounded-full blur-[100px] -translate-y-1/2 translate-x-1/2"></div>
 
-      <div className="container-custom pt-24 pb-12 relative z-10">
+      <div className="container-custom pt-16 pb-12 relative z-10">
         <div className="grid lg:grid-cols-12 gap-16 lg:gap-8">
           {/* Brand Info */}
-          <div className="lg:col-span-5 space-y-8">
+          <div className="lg:col-span-5 space-y-6">
             <div className="flex items-center gap-4">
               <div className="w-16 h-16 md:w-20 md:h-20 overflow-hidden rounded-full ring-4 ring-white/10 shadow-2xl">
                 <img src="/logo.jpg" alt="Logo" className="w-full h-full object-cover" />
@@ -70,10 +70,9 @@ const Footer = () => {
             </ul>
           </div>
 
-          {/* Contact & Location */}
           <div className="lg:col-span-4 space-y-8 text-center lg:text-left">
             <h4 className="text-xs uppercase tracking-[0.3em] font-bold text-accent">{t('footer.contactTitle')}</h4>
-            <div className="space-y-6">
+            <div className="space-y-4">
               <div className="flex flex-col lg:flex-row gap-4 items-center justify-center lg:justify-start pt-2">
                 <MapPin className="w-5 h-5 text-accent flex-shrink-0" />
                 <p className="text-white/70 text-sm leading-relaxed">
@@ -88,7 +87,7 @@ const Footer = () => {
             </div>
 
             {/* Premium Newsletter Section */}
-            <div className="pt-8 space-y-6 text-center lg:text-left">
+            <div className="pt-4 space-y-6 text-center lg:text-left">
               <div className="space-y-2">
                 <span className="text-[10px] uppercase tracking-[0.3em] font-bold text-white/40 block">Stay Updated</span>
                 <p className="text-sm text-white/60 font-medium">{t('footer.newsletter')}</p>
@@ -113,11 +112,11 @@ const Footer = () => {
         </div>
 
         {/* Legal & Credits */}
-        <div className="mt-24 pt-8 border-t border-white/10 flex flex-col md:flex-row justify-between items-center gap-6">
+        <div className="mt-12 pt-8 border-t border-white/10 flex flex-col md:flex-row justify-between items-center gap-6">
           <p className="text-[10px] uppercase tracking-[0.2em] text-white/40">
             &copy; {currentYear} WISSAL COOKIES ATELIER. {t('footer.rights')}.
           </p>
-          <div className="flex gap-8">
+          <div className="flex gap-4">
             {['Privacy Policy', 'Terms of Service'].map((legal, i) => (
               <a key={i} href="#" className="text-[10px] uppercase tracking-[0.2em] text-white/40 hover:text-accent transition-colors">
                 {legal}
