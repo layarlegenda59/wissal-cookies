@@ -95,12 +95,11 @@ const Testimonials = () => {
           ))}
         </div>
 
-        {/* Social Proof Stats */}
         <motion.div
           initial={{ opacity: 0, y: 30 }}
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ delay: 0.5, duration: 1 }}
-          className="mt-24 flex flex-col items-center gap-8"
+          className="mt-16 sm:mt-24 flex flex-col items-center gap-6 sm:gap-8 text-center"
         >
           <div className="flex -space-x-3 sm:-space-x-4">
             {[
@@ -114,15 +113,15 @@ const Testimonials = () => {
               </div>
             ))}
           </div>
-          <div className="flex flex-col items-center gap-4">
+          <div className="flex flex-col items-center gap-2 sm:gap-4">
             <div className="flex items-center gap-4">
-              <div className="h-px w-12 bg-accent/30 hidden md:block"></div>
-              <p className="stat-value text-primary group-hover:text-accent transition-colors duration-500">2,500+</p>
-              <div className="h-px w-12 bg-accent/30 hidden md:block"></div>
+              <div className="h-px w-8 sm:w-12 bg-accent/30 hidden sm:block"></div>
+              <p className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-serif italic text-primary tracking-tighter">2,500</p>
+              <div className="h-px w-8 sm:w-12 bg-accent/30 hidden sm:block"></div>
             </div>
-            <div className="flex items-center gap-2">
+            <div className="flex items-center gap-2 justify-center">
               <Users className="w-4 h-4 text-accent" />
-              <span className="stat-label mt-0">{t('testimonials.socialProof').replace('{count}', '')}</span>
+              <span className="text-[9px] sm:text-[10px] uppercase tracking-widest font-bold text-accent text-center leading-tight">{t('testimonials.socialProof')}</span>
             </div>
           </div>
         </motion.div>

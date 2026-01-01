@@ -128,7 +128,7 @@ const translations: Record<Language, any> = {
             label: 'Suara Keunggulan',
             title: 'Apa Kata Para',
             titleAccent: 'Penikmat Kami.',
-            socialProof: 'Bergabunglah dengan {count}+ keluarga yang puas berbagi warisan manis kami.',
+            socialProof: 'Bergabunglah dengan keluarga yang puas berbagi warisan manis kami.',
             connoisseurs: 'Penikmat',
             t1: {
                 name: 'Amanda Wibowo',
@@ -304,7 +304,7 @@ const translations: Record<Language, any> = {
             label: 'Voice of Excellence',
             title: 'What Our',
             titleAccent: 'Connoisseurs Say.',
-            socialProof: 'Join {count}+ satisfied families sharing our sweet legacy.',
+            socialProof: 'Join satisfied families sharing our sweet legacy.',
             connoisseurs: 'Connoisseurs',
             t1: {
                 name: 'Amanda Wibowo',
