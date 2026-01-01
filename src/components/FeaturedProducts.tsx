@@ -77,7 +77,7 @@ const FeaturedProducts = () => {
               initial={{ opacity: 0, y: 30 }}
               whileInView={{ opacity: 1, y: 0 }}
               transition={{ delay: index * 0.1, duration: 0.8 }}
-              className="group min-w-[280px] sm:min-w-0 snap-center"
+              className="group min-w-[220px] sm:min-w-0 snap-center"
             >
               <div className="relative aspect-[4/5] overflow-hidden rounded-2xl mb-6 shadow-xl group-hover:shadow-2xl transition-all duration-700">
                 <img

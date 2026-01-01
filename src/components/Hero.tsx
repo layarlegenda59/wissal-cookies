@@ -58,7 +58,7 @@ const Hero = () => {
             <div className="flex flex-col sm:flex-row items-center gap-6 pt-4">
               <button
                 onClick={openWhatsApp}
-                className="btn-premium group w-full sm:w-auto py-5 px-10"
+                className="btn-premium group w-full sm:w-auto py-4 px-8"
               >
                 <span className="relative z-10 flex items-center gap-2">
                   {t('hero.ctaPrimary')} <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />

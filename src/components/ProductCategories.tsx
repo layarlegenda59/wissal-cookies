@@ -74,7 +74,7 @@ const ProductCategories = () => {
               initial={{ opacity: 0, y: 30 }}
               whileInView={{ opacity: 1, y: 0 }}
               transition={{ delay: index * 0.1, duration: 0.6 }}
-              className="group min-w-[280px] lg:min-w-0 snap-center"
+              className="group min-w-[230px] lg:min-w-0 snap-center"
             >
               <div className="card-luxury h-full flex flex-col">
                 <div className="relative aspect-[3/4] overflow-hidden">
@@ -93,8 +93,8 @@ const ProductCategories = () => {
                   </div>
                 </div>
 
-                <div className="p-6 sm:p-8 space-y-3 flex-grow flex flex-col">
-                  <h3 className="text-xl sm:text-2xl font-serif italic text-primary group-hover:text-accent transition-colors">
+                <div className="p-5 sm:p-8 space-y-3 flex-grow flex flex-col">
+                  <h3 className="text-lg sm:text-2xl font-serif italic text-primary group-hover:text-accent transition-colors">
                     {category.name}
                   </h3>
                   <p className="text-[13px] sm:text-sm text-muted-foreground leading-relaxed flex-grow">

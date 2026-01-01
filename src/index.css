@@ -122,7 +122,7 @@
   }
 
   .btn-premium {
-    @apply relative overflow-hidden inline-flex items-center justify-center gap-2 px-8 py-4 bg-primary text-primary-foreground rounded-full font-medium;
+    @apply relative overflow-hidden inline-flex items-center justify-center gap-2 px-6 py-3.5 sm:px-8 sm:py-4 bg-primary text-primary-foreground rounded-full font-medium text-sm sm:text-base;
     transition: all 0.5s ease;
   }
 
